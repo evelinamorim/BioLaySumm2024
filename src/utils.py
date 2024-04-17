@@ -79,7 +79,7 @@ def get_processed_elife_data(ds, tokenizer, config, split, shuffle=False):
         return batch
 
 
-    data = load_dataset(ds, split)
+    data = load_dataset(ds, split, config)
 
     data = [{"idx": i, **x} for i, x in enumerate(data)]
 
