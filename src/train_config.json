@@ -7,6 +7,7 @@
   "is_merge_encoders": false,
   "is_graph_decoder": false,
   "graph_data_path": "../data/",
+  "data_json":"../data/",
   "output_dir": "./models/graph_dec",
   "lr": 2e-6,
   "num_epochs": 1,

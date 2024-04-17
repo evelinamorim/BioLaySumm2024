@@ -8,7 +8,7 @@ def load_train_config(config_path="train_config.json"):
     """
     Load config for training.
     """
-    with open("train_config.json", "r") as f:
+    with open(config_path, "r") as f:
         config = json.loads(f.read())
     return config
 
