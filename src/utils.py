@@ -1,3 +1,4 @@
+import os
 
 from torch.utils.data.dataloader import DataLoader
 import pandas as pd
@@ -14,7 +15,7 @@ def load_train_config(config_path="train_config.json"):
 
 def load_dataset(ds, split, config):
     #fp = f"../data/{ds}/{split}.json"
-    fp = config["data_json"]
+    fp = os.path.join(config["data_json"],ds,f"{split}.json")
     #with open(fp, "r") as f:
     data = pd.read_json(fp, lines=True)
     data = data.to_dict('records')
